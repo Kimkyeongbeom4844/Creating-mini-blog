@@ -38,9 +38,10 @@ aside {
     position:relative;
  }
  .change>li:hover{
-    background-color: blue;
-    color: yellow;
+    background-color: rgb(240, 226, 151);
+    color: black;
     font-style: italic;
+    font-weight: bold;
     transition: 1s;
 }
 

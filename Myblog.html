@@ -5,6 +5,13 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        @font-face {
+            font-family: "Maplestory Light";
+            src: url("Maplestory Light.ttf") format("truetype");
+        }
+        body {
+            font-family: "Maplestory Light", sans-serif;
+        }
         table {
             width:70%;  /* 표의 너비 */
             border:1px solid #222; /* 1픽셀짜리 표 테두리 */
@@ -53,6 +60,7 @@
                     <li><a href="#who am I">Who am I?</a></li>
                     <li><a href="#Experience">Experience </a></li>
                     <li><a href="#skills">skills</a></li>
+                    <li><a href="#Certificate">Certificate</a></li>
                     <li><a href="#Education">Education</a></li>
                 </ul>
             </div>
@@ -78,7 +86,7 @@
             <!-- 경력 -->
             <section>
                 <h2 class="subtitle" id="Experience">Experience</h2>
-                <ul>
+                <ul style="margin-left: 5%;">
                     <li>프론트엔드 개발
                         <ul>
                             <li>나만의 홈페이지 작성</li>
@@ -96,9 +104,41 @@
             <!-- 숙련도 -->
             <section>
                 <h2 class="subtitle" id="skills">Skills</h2>
-
+                <ul style="margin-left: 5%;">
+                    <li><label>HTML 5</label>
+                        <meter min="0" max="100" low="50" high="80" value="95" style="margin-left: 6.5%;"></meter>
+                    <li><label>CSS 3</label>
+                        <meter min="0" max="100" low="50" high="80" value="60" style="margin-left: 9%;"></meter>
+                    <li><label>JavaScript</label>
+                        <meter min="0" max="100" low="50" high="80" value="5"></meter>
+                    <li><label>MySQL</label>
+                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 7%;"></meter>
+                </ul>
             </section>
-
+           
+            <!-- 자격증 -->
+            <section>
+                <h2 class="subtitle" id="Certificate">Certificate</h2>
+                <ul style="margin-left: 5%;">
+                    <li> 코딩지도사
+                        <ul>
+                            <li> 2020.7~8 획득</li>
+                        </ul>
+                    </li>
+                    <li>웹 디자인 기능사
+                        <ul>
+                            <li>2021.7 웹 디자인 기능사 필기 합격</li>
+                            <li>2021.8 웹 디자인 기능사 실기 준비 중</li>
+                        </ul>                        
+                    </li>
+                    <li> 정보처리기사
+                        <ul>
+                            <li> 2022년에 준비!</li>
+                        </ul>
+                    </li>
+                </ul>             
+            </section>
+             
             <!-- 학력 -->
             <section>
                 <h2 class="subtitle" id="Education">Education</h2>
