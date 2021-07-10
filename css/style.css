@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
 }
-body {
-    background:#222;
-    height:100%;
-    margin:0;
-}
 li,p {
     line-height: 2.0;
     font-size:0.9em;
