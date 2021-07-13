@@ -17,9 +17,10 @@
             background-attachment: fixed;
         }
         table {
-            width:70%;  /* 표의 너비 */
-            border:1px solid #222; /* 1픽셀짜리 표 테두리 */
+            width:90%;  /* 표의 너비 */
+            border:2px solid #222; /* 1픽셀짜리 표 테두리 */
             border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한 줄로 표시 */
+            text-align: center;
         }
         thead {
             background:#eee;  /* 제목 행의 배경 색 */
@@ -45,6 +46,13 @@
             border-radius: 10px;
             width: 200px;
             height: 200px;
+            margin-left: -3px;
+        }
+        .skills>ul {
+            transition-duration: 3s;
+        }
+        html{                       /*단 3줄의 코드로 css 전용 스크롤 이동 애니메이션 추가*/
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -53,7 +61,7 @@
     <div id="container">
         <!-- 사이드바 -->
         <aside>
-            <div id="namecard">
+            <div id="namecard" class="namecard">
                 <img src="https://avatars.githubusercontent.com/u/82068552?v=4" alt="">
                 <h1>Kyeongbeomg Kim</h1>
                 <p>Hello :)</p>
@@ -70,7 +78,7 @@
             </div>
             <div id="detail">
                  <p>Jeju, Korea</p>
-                 <p>bibix321@naver.com</p>             
+                 <p>Jeju National Univ.<br>(Computer Engineering)</p>
             </div>
             <div id="sns">
                 <h2>SNS</h2>
@@ -92,8 +100,8 @@
                 <h2 class="subtitle" id="Experience">Experience</h2>
                 <ul style="margin-left: 5%;">
                     <li>웹 페이지 개발
-                        <ul>
-                            <li>나만의 홈페이지 작성<br>☞ <q><a href="https://kimkyeongbeom4844.netlify.app/" target="_blank">https://kimkyeongbeom4844.netlify.app/</a></q>
+                        <ul>    
+                            <li>템플릿을 이용한 개인블로그 작성<br>☞ <q><a href="https://kimkyeongbeom4844.netlify.app/" target="_blank">https://kimkyeongbeom4844.netlify.app/</a></q>
                         </ul>
                     </li>
                     <li>웹 디자인
@@ -114,14 +122,16 @@
             <section>
                 <h2 class="subtitle" id="skills">Skills</h2>
                 <ul style="margin-left: 5%;">
-                    <li><label>HTML 5</label>
-                        <meter min="0" max="100" low="50" high="80" value="95" style="margin-left: 6.5%;"></meter>
+                    <li class="html"><label>HTML 5</label>
+                        <meter min="0" max="100" low="50" high="100" value="95" style="margin-left: 6.5%;"></meter>
                     <li><label>CSS 3</label>
-                        <meter min="0" max="100" low="50" high="80" value="60" style="margin-left: 9%;"></meter>
+                        <meter min="0" max="100" low="50" high="100" value="90" style="margin-left: 9%;"></meter>
                     <li><label>JavaScript</label>
                         <meter min="0" max="100" low="50" high="80" value="5"></meter>
-                    <li><label>MySQL</label>
-                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 7%;"></meter>
+                    <li><label>JQuery</label>
+                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 6.5%;"></meter>
+                    <li><label>Node.JS</label>
+                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 5.5%;"></meter>
                 </ul>
             </section>
            
@@ -131,7 +141,7 @@
                 <ul style="margin-left: 5%;">
                     <li> 코딩지도사
                         <ul>
-                            <li> 2020.7~8 획득</li>
+                            <li> 2020.8 획득</li>
                         </ul>
                     </li>
                     <li>웹 디자인 기능사
@@ -152,7 +162,7 @@
             <section>
                 <h2 class="subtitle" id="Education">Education</h2>
                 <table>
-                    <caption>학력 사항 </caption>
+                    <caption style="margin-bottom: 5px;">- 학력 사항 -</caption>
                     <thead>
                         <tr>
                             <th>출신학교</th>

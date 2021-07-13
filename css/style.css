@@ -6,9 +6,9 @@ li,p {
     font-size:0.9em;
 }
 #container {
-    position:absolute;
-    left:50%;
-    margin-left:-450px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
     width:900px;
     /* height:100%; */
     background:#fff;
@@ -25,10 +25,14 @@ aside {
     box-shadow:3px 3px 10px 2px #222;
 
 }  */
-#detail {
-    position: relative;    
+#detail>p {
+    position: relative;
 }
 #menu
+ {
+    position:relative;
+ }
+ #sns
  {
     position:relative;
  }
@@ -55,10 +59,9 @@ aside {
 }
 
 section > p, section>table {
-    margin-left:50px;
+    margin-left:40px;
 }
 
-/* 글자스타일 */
 aside h1 {
     font-size:1.8em;
     font-variant: small-caps;
@@ -69,7 +72,9 @@ aside h2 {
 #namecard p {
     font-size:0.9em;
     color:rgb(99, 99, 99);
-    /* font-style:italic; */
+}
+#namecard>h1 {
+    font-size: 26px;
 }
 
 .subtitle {
