@@ -58,12 +58,82 @@
 </head>
 
 <body>
+    <script>
+        function dwn(){
+            var bar=document.getElementById("bar"),
+            progress=document.getElementById("progress"),
+            loaded=0;
+            var load=function(){
+                loaded +=9;
+                bar.value=loaded;		
+    
+                if(loaded ==99){
+                    clearInterval(dummyLoad);	
+                }		
+            };
+        
+            var dummyLoad = setInterval(function() {
+                load()	
+            }, 500);
+        }
+        function dwn1(){
+            var bar=document.getElementById("bar1"),
+            progress=document.getElementById("progress1"),
+            loaded=0;
+            var load=function(){
+                loaded +=9;
+                bar.value=loaded;		
+    
+                if(loaded ==90){
+                    clearInterval(dummyLoad);	
+                }		
+            };
+        
+            var dummyLoad = setInterval(function() {
+                load()	
+            }, 500);
+        }
+        function dwn2(){
+            var bar=document.getElementById("bar2"),
+            progress=document.getElementById("progress2"),
+            loaded=0;
+            var load=function(){
+                loaded +=9;
+                bar.value=loaded;		
+    
+                if(loaded ==18){
+                    clearInterval(dummyLoad);	
+                }		
+            };
+        
+            var dummyLoad = setInterval(function() {
+                load()	
+            }, 500);
+        }
+        function dwn3(){
+            var bar=document.getElementById("bar3"),
+            progress=document.getElementById("progress3"),
+            loaded=0;
+            var load=function(){
+                loaded +=9;
+                bar.value=loaded;		
+    
+                if(loaded ==0){
+                    clearInterval(dummyLoad);	
+                }		
+            };
+        
+            var dummyLoad = setInterval(function() {
+                load()	
+            }, 500);
+        }
+        </script> 
     <div id="container">
         <!-- 사이드바 -->
         <aside>
             <div id="namecard" class="namecard">
                 <img src="https://avatars.githubusercontent.com/u/82068552?v=4" alt="">
-                <h1>Kyeongbeomg Kim</h1>
+                <h1>Kyeongbeom Kim</h1>
                 <p>Hello :)</p>
             </div>
             <div id="menu" class="Menu">
@@ -71,7 +141,7 @@
                 <ul class="change">
                     <li><a href="#who am I">Who am I?</a></li>
                     <li><a href="#Experience">Experience </a></li>
-                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#skills" onclick="dwn(),dwn1(),dwn2()">skills</a></li>
                     <li><a href="#Certificate">Certificate</a></li>
                     <li><a href="#Education">Education</a></li>
                 </ul>
@@ -120,18 +190,23 @@
 
             <!-- 숙련도 -->
             <section>
-                <h2 class="subtitle" id="skills">Skills</h2>
+                <h2 class="subtitle" id="skills" onclick="dwn(),dwn1(),dwn2()"><a href="#skills" style="text-decoration: none;">Skills</a></h2>
                 <ul style="margin-left: 5%;">
                     <li class="html"><label>HTML 5</label>
-                        <meter min="0" max="100" low="50" high="100" value="95" style="margin-left: 6.5%;"></meter>
+                        <progress id="bar" value="0" max="100" style="margin-left: 6.5%;">
+                            <span id="progress"> </span></progress>    
                     <li><label>CSS 3</label>
-                        <meter min="0" max="100" low="50" high="100" value="90" style="margin-left: 9%;"></meter>
+                        <progress id="bar1" value="0" max="100" style="margin-left: 9%;">
+                            <span id="progress1"> </span></progress>
                     <li><label>JavaScript</label>
-                        <meter min="0" max="100" low="50" high="80" value="5"></meter>
+                        <progress id="bar2" value="0" max="100" >
+                            <span id="progress2"> </span></progress>
                     <li><label>JQuery</label>
-                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 6.5%;"></meter>
+                        <progress id="bar3" value="0" max="100" style="margin-left: 6.5%;">
+                            <span id="progress3"> </span></progress>
                     <li><label>Node.JS</label>
-                        <meter min="0" max="100" low="50" high="80" value="0" style="margin-left: 5.5%;"></meter>
+                        <progress id="bar4" value="0" max="100" style="margin-left: 5%;">
+                            <span id="progress4"> </span></progress>
                 </ul>
             </section>
            
@@ -183,6 +258,7 @@
                     </tfoot>
                 </table>
             </section>
+                <h3><a href="" style="text-decoration: none; text-align: center; font-weight: bold; margin-left: 40%;">맨 위로</h3>
         </div>        
     </div>
 </body>
