@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    ul {margin-left: -35px;}
+    ul > a {display: block; font-size: 1.2em; margin-bottom: 15px;}
+    ul > li {margin-left: 45px;}
+    #memo {margin: 0; list-style: none;}
+    div {margin-left: 6px; margin-top: -10px;}
+</style>
+</head>
+<body>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <p><b>HTML, CSS, JAVASCRIPT</b>에 대한 기술적 이해화 많은 경험이 있는분을 찾습니다.</p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>입사지원서</legend>
+                <ul><a>개인정보</a>
+                    <li>이름 <input type="text"></li>
+                    <li>연락처 <input type="tel"></li>
+                    <li>학과 
+                        <select>
+                            <option value="machine">기계 공학과</option>
+                            <option value="computer" selected>컴퓨터 공학과</option>
+                            <option value="energy">에너지 공학과</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul><a>지원분야</a>
+                    <li><label><input type="radio" name="web" value="publishing"> 웹 퍼블리싱</label></li>
+                    <li><label><input type="radio" name="web" value="application"> 웹 어플리케이션</label></li>
+                    <li><label><input type="radio" name="web" value="devsup"> 웹 개발 지원</label></li>
+                </ul>
+                <ul><a>지원동기</a>
+                    <li id="memo"><textarea cols="60" rows="10" placeholder="지원동기를 작성해주세요."></textarea></li>
+                </ul>
+                <div>
+                   <input type="submit" value="접수하기">
+                    <input type="reset" value="다시작성"> 
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>
