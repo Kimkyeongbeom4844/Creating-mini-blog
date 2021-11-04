@@ -1,7 +1,7 @@
 * {box-sizing: border-box; margin: 0; padding: 0;}
 html{scroll-behavior: smooth;}
 li,p {line-height: 2.0; font-size:0.9em; margin: 3px 0 3px 20px;}
-#container {display: grid; grid-template-columns: 300px 600px; grid-template-rows: 1fr; position: absolute; left: 50%; margin-left: -450px; width:900px; background:#fff;}
+#container {display: grid; grid-template-columns: 300px 600px; grid-template-rows: 1fr; margin: 0 auto; width:900px; background:#fff;}
 aside {grid-column: 1; padding:20px 50px;}
 #detail {margin-top: 10px;}
 .change>li:hover{background-color: rgb(240, 226, 151); color: black; font-style: italic; font-weight: bold; transition: 1s;}
@@ -14,7 +14,7 @@ aside h2 {font-size:1.2em; margin-top: 20px;}
 #namecard p {font-size:0.9em;color:rgb(99, 99, 99);}
 #namecard>h1 {font-size: 28px;}
 .subtitle {font-size:1.5em;line-height:0.9em;}
-.subtitle::before {content:""; display:block; background:url("../images/note.png") no-repeat; width:24px; height:24px; float:left; margin:0 15px 0 0;}
+.subtitle::before {content:""; display:block; width:24px; height:24px; float:left; margin:0 15px 0 0;}
 section > p {font-size:0.9em;}
 section > h2 {margin-bottom: 10px;}
 table {width:90%;border:2px solid #222; border-collapse: collapse; text-align: center;}
